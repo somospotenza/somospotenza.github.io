@@ -1,6 +1,6 @@
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
@@ -8,13 +8,35 @@ body {
 }
 
 header {
-    background-color: #FFE600;
-    color: #000;
-    text-align: center;
-    padding: 2rem;
+    background-color: #fff200;
+    padding: 0;
 }
 
-header nav a {
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to right, #fff200, #fefefe);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+nav {
+    text-align: center;
+    background-color: #fff;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    padding: 1rem;
+}
+
+nav a {
     margin: 0 1rem;
     text-decoration: none;
     color: #333;
@@ -25,8 +47,37 @@ main {
     padding: 2rem;
 }
 
-section {
+.content {
     margin-bottom: 3rem;
+}
+
+.cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    padding: 1.5rem;
+    flex: 1 1 calc(33% - 1rem);
+    min-width: 220px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.benefits {
+    list-style: none;
+    padding-left: 0;
+}
+
+.benefits li {
+    margin: 0.5rem 0;
 }
 
 form input, form textarea {
@@ -35,11 +86,12 @@ form input, form textarea {
     margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 form button {
     padding: 0.8rem 2rem;
-    background-color: #FFE600;
+    background-color: #fff200;
     border: none;
     cursor: pointer;
     font-weight: bold;
