@@ -3,20 +3,19 @@ body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #fffef7;
     color: #333;
-    background-color: #fefefe;
 }
 
 header.hero {
     text-align: center;
-    background: linear-gradient(to right, #fff200, #fff);
-    padding: 1rem;
+    background: linear-gradient(to right, #fff200, #fce6ff);
+    padding: 2rem 1rem;
 }
 
-.banner {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+.coelho-principal {
+    max-width: 180px;
+    margin-bottom: 1rem;
 }
 
 .cta-button, .back-button {
@@ -28,6 +27,13 @@ header.hero {
     border-radius: 5px;
     display: inline-block;
     margin-top: 1rem;
+}
+
+.contato-home {
+    text-align: center;
+    background-color: #fafafa;
+    padding: 1rem;
+    font-size: 1rem;
 }
 
 .content {
@@ -49,7 +55,25 @@ header.hero {
 .produto img {
     width: 100%;
     max-width: 200px;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #fff200;
+    padding: 0.8rem 2rem;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 footer {
